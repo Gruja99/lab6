@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="Kategorija 1">
+    <CheckBoxPreference
+        android:title="Izaberite opciju"
+        android:defaultValue="false"
+        android:summary="Cekiran ili necekiran"
+        android:key="checkboxPref"/>
+</PreferenceCategory>
+    <PreferenceCategory android:title="Kategorija 2">
+        <EditTextPreference
+            android:summary="Ucitajte string"
+            android:defaultValue="[Ucitajte string ovde]"
+            android:title="Izmenite tekst"
+            android:key="editTextPref"/>
+        <RingtonePreference
+            android:summary="Izaberite melodiju zvona"
+            android:title="Melodija zvona"
+            android:key="ringtonePref"/>
+        <PreferenceScreen
+            android:title="Drugi ekran preferencija"
+            android:summary="Klikni za prelazak na drugi ekran"
+            android:key="secondPrefScreenPref"/>
+        <EditTextPreference
+            android:summary="Ucitajte string"
+            android:title="Ucitajte string(drugi ekran)"
+            android:key="secondEditTextPref"/>
+    </PreferenceCategory>
+</PreferenceScreen>
